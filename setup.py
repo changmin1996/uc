@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'move_limo=limo_application.move_limo:main',
         ],
     },
 )
