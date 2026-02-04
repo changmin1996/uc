@@ -12,8 +12,8 @@ class LimoStop(Node):
         self.stop_pub_ = self.create_publisher(Bool, 'stop', 10)
         self.laser_sub_ = self.create_subscription(LaserScan, 
                                                    'scan',
-                                                    10,
-                                                    self.laserCallback)
+                                                    self.laserCallback,
+                                                    10)
     
     def laserCallback(self, msg):
         _stop = Bool()
