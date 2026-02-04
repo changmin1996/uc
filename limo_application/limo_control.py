@@ -27,7 +27,7 @@ class LimoControl(Node):
         _cmd = Twist()
 
         _cmd.linear.x = 0.3
-        _cmd.angular.z = 0.01 * msg.data
+        _cmd.angular.z = 0.0055 * msg.data
 
         if self.stop_flag_:
             _cmd.linear.x = 0.0

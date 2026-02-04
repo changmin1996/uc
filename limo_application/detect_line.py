@@ -53,8 +53,8 @@ class DetectLine(Node):
             cy = int(M['m01']/M['m00'])
             cy = 400 + cy
             _image = cv2.circle(_image, (cx, cy), 10, (255, 0, 0), -1)
-            _image = cv2.line(_image, (170, 0), (170, 480), (0, 255, 0), 5)
-            gap = 170 - cx
+            _image = cv2.line(_image, (160, 0), (160, 480), (0, 255, 0), 5)
+            gap = 160 - cx
         else:
             gap = 0
         
