@@ -28,6 +28,7 @@ setup(
             'rotate_absolute=limo_application.rotate_absolute:main',
             'limo_stop=limo_application.limo_stop:main',
             'detect_line=limo_application.detect_line:main',
+            'limo_control=limo_application.limo_control:main',
         ],
     },
 )
